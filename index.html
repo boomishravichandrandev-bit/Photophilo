@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Boomish Ravichandran — creative web developer in India." />
+    <meta name="theme-color" content="#eeece4" />
+    <title>Boomish Ravichandran — Portfolio</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23292b31'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='30' font-weight='700' fill='%23eeece4'%3Ep5%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main class="site" data-theme="light">
+      <div class="backdrop"><canvas class="hero-canvas" id="hero-canvas" aria-hidden="true"></canvas></div>
+      <div class="grain" aria-hidden="true"></div>
+
+      <header class="topbar">
+        <a class="wordmark" href="#top" aria-label="Boomish Ravichandran, top"></a>
+        <div class="topbar-right">
+          <nav class="topnav" aria-label="Main navigation">
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about">About</a>
+            <a href="#faq">FAQ</a>
+          </nav>
+          <div class="appearance" aria-label="Appearance">
+            <button type="button" data-theme-option="light" aria-pressed="true">Light</button>
+            <button type="button" data-theme-option="dark" aria-pressed="false">Dark</button>
+            <button type="button" data-theme-option="mono" aria-pressed="false">Monospaced</button>
+          </div>
+        </div>
+      </header>
+
+      <section id="top" class="hero">
+        <p class="hero-kicker">Boomish Ravichandran / Portfolio</p>
+        <h1>Boomish<br />Ravichandran</h1>
+        <div class="hero-baseline">
+          <p>Born in 2008 in Tamil Nadu, India.<br />I believe web design can be more diverse and inspiring.</p>
+          <div class="coordinates">CREATIVE WEB DEVELOPER<br />Tamil Nadu, India · 2008</div>
+        </div>
+        <a class="scroll-cue" href="#portfolio">Scroll to explore</a>
+      </section>
+/
+      <section id="portfolio" class="section-shell">
+        <div class="section-heading">
+          <h2>Portfolio</h2>
+          <span class="eyebrow">Selected works / 2020 — 2026</span>
+        </div>
+        <div class="work-list">
+          <article class="project"><span class="project-index">01</span><a class="project-name" href="https://creator-signal.boomishravichandran-dev.workers.dev/" target="_blank" rel="noreferrer">Creator Signal</a><span class="project-credit">Dev / Design: Boomish Ravichandran <a href="" target="_blank" rel="noreferrer"></a></span><time class="project-date">   </time></article>
+          <article class="project"><span class="project-index">02</span><a class="project-name" href="https://dental.boomishravichandran-dev.workers.dev/" target="_blank" rel="noreferrer">Dental Site </a><span class="project-credit">Dev / Design: <a href= target="_blank" rel="noreferrer">boomishravichandran-dev</a></span><time class="project-date">April.2026</time></article>
+          <article class="project"><span class="project-index">03</span><a class="project-name" href="https://gyokuro-s.com/" target="_blank" rel="noreferrer">GYOKURO Studio</a><span class="project-credit">Dev / Design: <a href="https://x.com/HiroakiNakano" target="_blank" rel="noreferrer">Hiroaki Nakano</a></span><time class="project-date">October.2025</time></article>
+        </div>
+      </section>
+
+      <section id="about" class="section-shell about">
+        <div class="section-heading"><h2>About</h2></div>
+        <div class="about-copy">
+          <p>Born in 2008 in Tamil Nadu, India. I believe web design can be more diverse and inspiring. With a mission to present the possibilities of web design, I am pursuing new expressions through experiments and thoughts.</p>
+        </div>
+      </section>
+
+      <section id="faq" class="section-shell faq-section">
+        <div class="section-heading"><h2>FAQ</h2><span class="eyebrow">Boomish Ravichandran</span></div>
+        <div class="faq-list">
+          <article class="faq">
+            <h3>How did you make the background effect in this website?</h3>
+            <div><p>I used three.js to write WebGL faster and the background effect is written in glsl.</p><p>If you are interested in glsl, I recommend you to read <a href="https://thebookofshaders.com/" target="_blank" rel="noreferrer">The Book of Shaders</a>.</p></div>
+          </article>
+          <article class="faq"><h3>Can I use your code?</h3><div><p>I don‘t allow anyone to use my code. I don‘t wanna say such thing but I got too much questions about that.</p></div></article>
+          <article class="faq">
+            <h3>How did you learn web frontend and WebGL/glsl ?</h3>
+            <div><p>By reading books and articles on the internet.</p><p>Here is a list of web pages I recommend to read.</p><p><a href="https://threejs.org/examples/" target="_blank" rel="noreferrer">three.js examples</a><br /><a href="https://thebookofshaders.com/" target="_blank" rel="noreferrer">The Book of Shaders</a><br /><a href="https://threejs-journey.com/" target="_blank" rel="noreferrer">three.js journey</a><br /><a href="https://tympanus.net/codrops/?s=three.js&amp;search-type=posts" target="_blank" rel="noreferrer">Codrops</a></p></div>
+          </article>
+          <article class="faq"><h3>What libraries do you use?</h3><div><p><a href="https://gsap.com/" target="_blank" rel="noreferrer">GSAP</a> for creating animations.<br /><a href="https://threejs.org/" target="_blank" rel="noreferrer">three.js</a> for writing WebGL code.<br /><a href="https://tweakpane.github.io/docs/" target="_blank" rel="noreferrer">Tweakpane</a> for tuning parameters.<br /><a href="https://alpinejs.dev/" target="_blank" rel="noreferrer">Alpine.js</a> is my favorite JavaScript framework.</p></div></article>
+          <article class="faq">
+          </article>
+        </div>
+      </section>
+      
+        <div class="footer-bottom">
+          <span class="wordmark">Boomish Ravichandran</span>
+          <span>© Boomish Ravichandran</span>
+          <button class="back-top" id="back-top" type="button">Back to top ↑</button>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
